@@ -1,4 +1,23 @@
 .flex{
     display: flex;
-    gap: 30px;
+    gap: 60px;
+}
+.label-holder{
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.outer{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width:100%
+}
+
+input{
+    width:300px;
+    height: 25px;
+    border-radius: 10px;
 }
