@@ -10,61 +10,65 @@
 </head>
 <body>
     <!-- two sides of the page, pic and form, form has div for text and form inputs-->
-    <div class="pic-container">
+    <div class="content">
+        <div class="pic-container">
+            <div class="logo">
+                <h1>Ironise</h1>
+            </div>
+        </div>
+        
+        <div class="form-container">
+            <div class="text">
+                <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!</p>
+                <p>Sign up <em>now</em> to get started.</p>
+                <p class="separate-text">You <em>know</em> you want to.</p>
+            </div>
+            <form action="#" method="post">
 
-    </div>
+                <div class="outer">
 
+                    <div class="formText">Let's do this!</div>
 
-    <div class="form-container">
+                    <div class="formOnly">
+                            <div class="input">
+                                <div class="label-holder"><label for="FirstName">First Name*</label></div>
+                                <input type="text" id="FirstName" required>
+                            </div>
 
-        <div class="text"></div>
-<!--create divs for each input and label to make them flex-->
-        <form action="#" method="post">
+                            <div class="input">
+                                <div class="label-holder"><label for="LastName">Last Name*</label></div>
+                                <input type="text" id="LastName" required>
+                            </div class="input">
 
-            <div class="outer">
-                <div class="formText">Let's do this!</div>
-                <br>
-                <div class="formOnly flex">
-                    <div class="leftSide">
-                        <div>
-                            <div class="label-holder"><label for="FirstName">First Name</label></div>
-                            <input type="text" id="FirstName">
-                        </div>
-                        <div>
-                            <div class="label-holder"><label for="Email">Email</label></div>
-                            <input type="email" id="Email">
-                        </div>
-                        <div>
-                            <div class="label-holder"><label for="Password">Password</label></div>
-                            <input type="text" id="Password">
-                        </div>
+                            <div class="input">
+                                <div class="label-holder"><label for="Email">Email*</label></div>
+                                <input type="email" id="Email" required>
+                            </div class="input">
                         
+                            <div class="input">
+                                <div class="label-holder"><label for="Number">Number</label></div>
+                                <input type="text" id="Number" minlength="11" maxlength="11">
+                            </div>
+
+                            <div class="input">
+                                <div class="label-holder"><label for="Password">Password*</label></div>
+                                <input type="password" id="Password" required>
+                            </div class="input">
+
+                            <div class="input">
+                                <div class="label-holder"><label for="ConfPassword" required>Confirm Password*</label></div>
+                                <input type="password" id="ConfPassword" required>
+                            </div>
+        
                     </div>
-
-                    <div class="rightSide">
-                        <div>
-                            <div class="label-holder"><label for="LastName">Last Name</label></div>
-                            <input type="text" id="LastName">
-                        </div>
-                        <div>
-                            <div class="label-holder"><label for="Number">Number</label></div>
-                            <input type="number" id="Number">
-                        </div>
-                        <div>
-                            <div class="label-holder"><label for="ConfPassword">Confirm Password</label></div>
-                            <input type="text" id="ConfPassword">
-                        </div>
-
-                    </div>
-
-                   
+        
                 </div>
 
-                
-
-            </div>
-            <div class="button-holder"><button type="submit" id="submit">Create Account</button></div>
-        </form>
+                <div class="button-holder"><button type="submit" id="submit">Create Account</button></div>
+           
+            </form>
+            <div class="log-in"><p>Already have an account?</p><a href="#">Log in</a></div>
+        </div>
     </div>
 </body>
 </html>
